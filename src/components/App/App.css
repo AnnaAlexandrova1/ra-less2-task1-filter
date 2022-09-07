@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  margin: 50px auto;
+  width: 70%;
+}
+.app-header{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  font-weight: 600;
+}

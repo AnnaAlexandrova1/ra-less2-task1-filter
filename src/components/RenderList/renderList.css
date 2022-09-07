@@ -1,0 +1,10 @@
+*{
+    box-sizing:border-box;
+  }
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 85%;
+    margin: 0 auto;
+    background-color: aqua;
+}
