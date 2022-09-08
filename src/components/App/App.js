@@ -13,7 +13,7 @@ class App extends Component {
     super(props)
     this.state={
       data: elementsArray,
-      filter: '',
+      filter: 'All',
     }
   }
 
@@ -22,15 +22,13 @@ class App extends Component {
   }
   
  render(){
-  const {filter} = this.state;
+  const {filter, data} = this.state;
 
   return (
     <div className="App">
       <header className="app-header">Домашнее задание "Портфолио с фильтрами"</header>
       <FilterPanel filter={filter} onFilterSelect={this.onFilterSelect}/>
-      <div>
-      <RenderList elementsArray={elementsArray}/>
-      </div>
+      <RenderList data={data}/>
     </div>
   );
  }
