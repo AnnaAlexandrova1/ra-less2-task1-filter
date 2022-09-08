@@ -42,42 +42,4 @@ class RenderList extends Component{
     }
 }
 
-/*class RenderList extends Component{
-    constructor({elementsArray}){
-        super()
-        this.elementsArray = elementsArray;
-    }
-    
-   
-    
-  render(){
-    const parts = this.drowColums()
-    //console.log(parts
-
-    let drowList = parts.map(item => {
-        const columns = item.map(i => {
-            const { img, category } = item;
-            return (
-                <DrowItem img={img} category={category} />
-            ) 
-        })
-    })
-
-    /* this.elementsArray.map(item => {
-        const { img, category } = item;
-        return (
-            <DrowItem img={img} category={category} />
-        ) 
-    })
-
-    return (
-        <div className="container">
-          {drowList}
-        </div>
-    )
-    }
-
-
-}*/
-
 export default RenderList;

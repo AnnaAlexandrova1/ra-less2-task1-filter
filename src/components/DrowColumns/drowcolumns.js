@@ -1,1 +1,0 @@
-import './drowColums.css'

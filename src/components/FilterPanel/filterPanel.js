@@ -2,10 +2,10 @@ import './filterPanel.css'
 
 const FilterPanel =(props) => {
   const buttonsData = [
-    {name:'All', label:'All'},
-    {name:'Websites', label:'Websites'},
-    {name:'Flayers', label:'Flayers'},
-    {name:'Businesscards', label:'Businesscards'},
+    {name:'all', label:'All'},
+    {name:'websites', label:'Websites'},
+    {name:'flayers', label:'Flayers'},
+    {name:'businesscards', label:'Businesscards'},
   ]
   
   // Надо реализовать props.onFilterSelect и  props.filter
