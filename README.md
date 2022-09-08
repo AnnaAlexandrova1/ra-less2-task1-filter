@@ -6,7 +6,7 @@ https://annaalexandrova1.github.io/ra-less2-task1-filter/
 
 Необходимо реализовать портфолио с фильтрами, аналогичное указанному на изображении.
 
-![portfolio-all](./assets/portfolio-all.png)
+![portfolio-all](./portfolio-all.png)
 
 ## Описание проекта
 
@@ -36,7 +36,7 @@ https://annaalexandrova1.github.io/ra-less2-task1-filter/
 - из компонента `Portfolio` передать активный фильтр в свойство `selected` компонента `Toolbar`
 - в компоненте `Portfolio` отфильтровать по активному фильтру проекты и передать их в компонент `ProjectList`
 
-![portfolio-cards.png](./assets/portfolio-cards.png)
+![portfolio-cards.png](./portfolio-cards.png)
 
 Набор данных для отображения:
 ```js
