@@ -3,25 +3,21 @@ import DrowItem from '../DrowItem/drowItem';
 import { Component } from 'react';
 
 class RenderList extends Component{
-    constructor(props){
-        super(props)
-    }
 
     // делит на 3 подмассива данные
     calcColums(){
-        const {data} = this.props;
-        const array = [[], [], []];
-        for(let i = 0; i < 3; i++){
-            const num = Math.ceil(data.length/3)
-            array[i] = data.slice(i*num, (i*num + num))
-        }
-        return array;
+    const {data} = this.props;
+    const array = [[], [], []];
+    for(let i = 0; i < 3; i++){
+        const num = Math.ceil(data.length/3)
+        array[i] = data.slice(i*num, (i*num + num))
     }
+    return array;
+}
 
     drowColumns(i){
-        const data = this.calcColums();
-        const array = data[i]
-        console.log(data)
+        const list = this.calcColums();
+        const array = list[i]
         const column = array.map(item => {
             const { img, category } = item;
             return (

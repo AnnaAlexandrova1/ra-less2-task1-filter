@@ -9,6 +9,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-width: calc(100%/3 - 20px)
 }
 
 .container .column:not(:first-child){

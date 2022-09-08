@@ -14,15 +14,15 @@ class App extends Component {
       filter: 'all',
     }
   }
-  
+
   filterPost = (items, filter) => {
     switch(filter) {
       case 'websites':
-        return items.filter(item => item.category == 'Websites')
+        return items.filter(item => item.category === 'Websites')
       case 'flayers': 
-        return items.filter(item => item.category == 'Flayers')
+        return items.filter(item => item.category === 'Flayers')
       case 'businesscards':
-        return items.filter(item => item.category == 'Business Cards')
+        return items.filter(item => item.category === 'Business Cards')
       default: 
         return items;
     }
@@ -35,6 +35,7 @@ class App extends Component {
  render(){
   const {filter, data} = this.state;
   const visibleData = this.filterPost(data, filter);
+
 
   return (
     <div className="App">
